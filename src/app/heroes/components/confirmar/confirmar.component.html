@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>Eliminar</h1>
+<div mat-dialog-content>
+  ¿Está seguro de eliminar a {{ heroe.superhero }}?
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close [matDialogClose]="undefined" >Cancelar</button>
+  <button mat-button mat-dialog-close cdkFocusInitial (click)="borrar()" color="warn" [matDialogClose]="true">Sí, eliminar!</button>
+</div>
